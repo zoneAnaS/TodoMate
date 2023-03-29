@@ -45,6 +45,7 @@ async function login(email,pass){
         formMessage.classList.add("none")
         data.password=pass;
         localStorage.setItem("user",JSON.stringify(data))
+        user=data;
         disableAllForm()
         displayTodo(data.todoList)
 
