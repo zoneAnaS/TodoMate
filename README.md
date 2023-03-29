@@ -16,6 +16,16 @@
 - User can delete a task
 - User can mark task as completed
 
+# Endpoints
+
+- POST ("todoapp/user/login") user login
+- POST ("todoapp/user/signup") user signup
+- PUT ("todoapp/user/{id}") update user details
+- PUT ("todoapp/user/{id}/todo/{todoId}") update todo
+- DELETE ("todoapp/user/{id}/todo/{todoId}") delete todo
+- POST ("todoapp/user/{id}/todo") add todo
+- DELETE ("todoapp/user/{id}") delete user
+
 # Tech Stacks
 
 - Front-end
@@ -24,6 +34,34 @@
 
 - Back-end
 
-[![Text Stack](https://skillicons.dev/icons?i=java,spring,hibernate,maven,git,github)](https://skillicons.dev)
+[![Text Stack](https://skillicons.dev/icons?i=java,spring,hibernate,maven,mysql,git,github)](https://skillicons.dev)
+
+# ER Diagram
+
+<p align="center">
+  <img src="https://drive.google.com/uc?id=1zeZPJ6JzpW6ZEKtYRyz3emY3G0JiZj5B">
+</p>
+
 
 # Screenshots
+
+<p align="center">
+  <img src="https://drive.google.com/uc?id=1dj8aGdi_s4lIQYOdnEE9LlreAgJ_Bqwu">
+</p>
+
+<p align="center">
+  <img src="https://drive.google.com/uc?id=1w--bQEGxU5fjGU460V9obCSfYvirodkC">
+</p>
+
+<p align="center">
+  <img src="https://drive.google.com/uc?id=1QXRbXz5hyQlzQaHwGXb1blvx3FeocB18">
+</p>
+
+<p align="center">
+  <img src="https://drive.google.com/uc?id=1tgG9aknhdspdtm8huSxpOB_nJeO_vliE">
+</p>
+
+<p align="center">
+  <img src="https://drive.google.com/uc?id=1QP9uHAIGf9iDNaJBcb3vrH5AvZ0laX_u">
+</p>
+
