@@ -1,4 +1,4 @@
-## TodoMate
+
 <p align="center">
   <img src="https://drive.google.com/uc?id=1oFhtCorWBzrBN_nVHWTOnID0JAwd2bxn">
 </p>
