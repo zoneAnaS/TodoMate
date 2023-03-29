@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="todo_page">
+       <h1 id="header">Todo List</h1>
+        <div id="info">
+            <span>Name: <span id="info-name">Anas Shaikh</span></span>
+            <span id="date">Date:   <span id="info-date">
+                <script>
+                        const currentDate = new Date();
+                        const year = currentDate.getFullYear();
+                        const month = currentDate.getMonth() + 1;
+                        const day = currentDate.getDate();
+                        document.getElementById("info-date").innerHTML=`${day}/${month}/${year}`;
+                </script>
+            </span></span>
+            
+        </div>
+        <div id="todo-body">
+            <div class="todo-box mustdo">
+                <h2 class="todo-box-head">MUST DO</h2>
+                <div class="todo-box-body" id="todo-box-body-mustdo">
+                            
+                            
+                </div>
+            </div>
+            <div class="todo-box shoulddo">
+                <h2 class="todo-box-head">SHOULD DO</h2>
+                <div class="todo-box-body" id="todo-box-body-shoulddo">
+
+                </div>
+            </div>
+            <div class="todo-box coulddo">
+                <h2 class="todo-box-head">COULD DO</h2>
+                <div class="todo-box-body" id="todo-box-body-coulddo">
+
+                </div>
+            </div>
+            <div class="todo-box maybe">
+                <h2 class="todo-box-head">MAY BE IF I GET TIME</h2>
+                <div class="todo-box-body" id="todo-box-body-maybe">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <form class="form" id="login">
+        <h2>LOGIN</h2>
+        <input type="email" name="email" id="login-email" required placeholder="enter registered email">
+        <input type="password" name="password" id="login-password" required placeholder="enter password">
+        <p class="none" id="form-login-message">yes</p>
+        <p>new? <span class="form-change" id="login-change">SignUp Here</span></p>
+        <input id="lb" type="submit" value="LOGIN">
+    </form>
+    <form class="form none" id="signup">
+        <h2>SIGN UP</h2>
+        <input type="text" name="name" id="signup-name" required placeholder="enter your name">
+        <input type="email" name="email" id="signup-email" required placeholder="enter your email">
+        <input type="password" name="password" id="signup-password" required placeholder="enter your password">
+        <p class="none" id="form-signup-message">email already exists</p>
+        <p>Already a user? <span class="form-change" id="signup-change">Login Here</span></p>
+        <input id="sb" type="submit" value="SIGN UP">
+    </form>
+    <form class="form none" id="todo-form">
+        <h2>Add Todo</h2>
+        <i id="cancel">X</i>
+        <input type="text"  name="name" id="todo-desc" required placeholder="enter task">
+        <p>Select priority</p>
+        <select name="todo" id="todoselect">
+            <option value="mustdo">high</option>
+            <option value="shouldo">mideum</option>
+            <option value="couldo">low</option>
+            <option value="maybe">lowest</option>
+        </select>
+        <p class="none" id="form-todo-message"></p>
+        <input id="tb"  type="submit" value="Add">
+    </form>
+    <div class="bg"></div>
+    <div id="todobutton">Add Todo</div>
+    <div id="logoutbutton">Logout</div>
+</body>
+<script src="index.js"></script>
+</html>

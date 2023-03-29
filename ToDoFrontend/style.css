@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Parisienne&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Brush Script', cursive;
+    box-sizing: border-box;
+
+}
+/* font-family: 'Merienda', cursive;
+font-family: 'Parisienne', cursive; */
+body{
+    
+    background-color: rgb(225, 227, 255);
+    height: 100vh;
+    color: #523229;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* #f9f3ee */
+#todo_page{
+    
+    width: 40%;
+    height: 90%;
+    background-color: #f9f3ee;
+    border:2px solid rgb(171, 170, 169);
+    margin: auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+    position: relative;
+}
+#header{
+    font-family: 'Merienda', cursive;
+    position: absolute;
+    top: -40px;
+    left:0px;
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+}
+#info{
+    padding-top: 10px;
+    width: 90%;
+    margin: auto;
+    font-size:28px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+#date{
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: #cdd5e0;
+}
+
+#todo-body{
+    width: 100%;
+    height: 95%;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px 20px;
+}
+.todo-box{
+    border-radius:  8% 92% 6% 94% / 93% 5% 95% 7% ;
+    padding: 5px;
+    padding-left: 25px;
+    height: 250px;
+}
+
+#priority{
+    background-color: bisque;
+    color: #523229;
+}
+.todo-box-body{
+    height: 80%;
+    overflow-y: scroll;
+}
+.todo-box-body::-webkit-scrollbar {
+    width: 0.5em; /* Set the width of the scrollbar */
+  }
+  
+  .todo-box-body::-webkit-scrollbar-track {
+    background-color:transparent; /* Set the background color of the scrollbar track */
+  }
+  
+  .todo-box-body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #523229; /* Set the color of the scrollbar thumb */
+  }
+  
+ 
+  .todo-box-body::-webkit-scrollbar-thumb:vertical {
+    height: 0; 
+  }
+  
+  .todo-box-body:hover::-webkit-scrollbar-thumb:vertical {
+    height: 2em;
+  }
+  
+  input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #523229;
+    background-color: transparent;
+    width:55%;
+    overflow: hidden;
+    margin: 0 3px;
+  } 
+.todo-main>input[type="text"]{
+    width:55%;
+    font-size: 20px;
+    color: #523229;
+
+}
+  input[type="text"]:focus {
+    border: none;
+    outline:1px solid #523229;
+  }
+  input[type="email"]{
+    border: none;
+    border-bottom: 1px solid #523229;
+    background-color: transparent;
+    overflow: hidden;
+    margin: 0 3px;
+  } 
+
+  input[type="email"]:focus {
+    
+    outline:none;
+  }
+  input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #523229;
+    background-color: transparent;
+    
+    overflow: hidden;
+    margin: 0 3px;
+  } 
+
+  input[type="password"]:focus {
+    
+    outline:none;
+  }
+  
+  .todo-main{
+    margin: 10px 0;
+  }
+.todo-box-head{
+    text-align: center;
+}
+.mustdo{
+    background-color: #f0dedd;
+}
+.shoulddo{
+    background-color: #e5d5ca;
+}
+.coulddo{
+    background-color: #cdd5e0;
+}
+.maybe{
+    background-color: #dbced5;
+}
+
+
+.form{
+    border-radius:  8% 92% 6% 94% / 93% 5% 95% 7% ;
+    padding: 30px 25px;
+    background-color: rgb(191, 251, 187);
+    font-size: 20px;
+    position: absolute;
+    width: 400px;
+    z-index: 20;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.bg{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-color: #b5d2f8;
+}
+.form>h2{
+    width: 100%;
+    text-align: center;
+}
+.form>p{
+    width: 100%;
+    text-align: center;
+}
+.form>input{
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.form>input[type="submit"]{
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 20%;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+
+.form-change{
+    color: blue;
+    cursor: pointer;
+}
+
+.none{
+    display: none;
+}
+#signup{
+    height: 350px;
+}
+#todobutton{
+    position: absolute;
+    bottom: 100px;
+    background-color: rgb(212, 255, 241);
+    cursor: pointer;
+    padding: 10PX 20PX;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius:30%;
+    right: 200px;
+}
+#todoselect{
+    background-color: rgb(255, 244, 230);
+    color: #523229;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    
+}
+#cancel{
+    position: absolute;
+    top: 15px;
+    font-size: 50px;
+    right: 30px;
+    cursor: pointer;
+}
+input[disabled] {
+    color: #523229;
+
+  }
+  input:disabled {
+    opacity: 1;;
+
+  }
+  input[type="checkbox"]:disabled {
+    opacity: 1;
+  }
+#info-name{
+text-transform: capitalize;
+}
+  #logoutbutton{
+    position: absolute;
+    bottom: 100px;
+    background-color: rgb(255, 145, 154);
+    cursor: pointer;
+    padding: 10PX 20PX;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius:30%;
+    left: 200px;
+
+  }
